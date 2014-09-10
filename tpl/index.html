@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>key gen</title>
+    <script src="/static/jquery/jquery-1.11.1.min.js"></script>
+    <script src="/static/highcharts/js/highcharts.js"></script>
+    <script src="/static/highcharts/js/modules/exporting.js"></script>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap-theme.min.css">
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">keygen</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">st(si)2/sdac</a> ⠵</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+	  <li class="active"><a href="#home" role="tab" data-toggle="tab">Private key</a></li>
+	  <li><a href="#profile" role="tab" data-toggle="tab">Public key</a></li>
+	  <li><a href="#messages" role="tab" data-toggle="tab">Ssh RSA</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+	  <div class="tab-pane active" id="home">
+	    <pre>{{.KeyPem}}</pre>
+	  </div>
+	  <div class="tab-pane" id="profile">
+	    <pre>{{.PubPem}}</pre>
+	  </div>
+	  <div class="tab-pane" id="messages">
+	    <pre>{{.Ssh}}</pre>
+	  </div>
+	</div>
+     
+    </div>
+
+  </body>
+
+</html>
